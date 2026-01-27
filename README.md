@@ -44,4 +44,4 @@ It is not intended for non-technical site owners.
 
 ## License
 
-TBD
+GPL-2.0
