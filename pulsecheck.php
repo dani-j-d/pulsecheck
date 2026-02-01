@@ -2,7 +2,7 @@
 /**
  * Plugin Name: PulseCheck
  * Description: High-signal diagnostic checks for WordPress developers.
- * Version: 0.2.0
+ * Version: 0.3.0
  * Author: dani-j-d 
  * License: GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html

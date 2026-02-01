@@ -6,6 +6,7 @@ require_once __DIR__ . '/Result.php';
 require_once __DIR__ . '/Contracts/CheckInterface.php';
 require_once __DIR__ . '/Checks/PhpVersionCheck.php';
 require_once __DIR__ . '/Checks/CoreVersionCheck.php';
+require_once __DIR__ . '/Checks/CronHealthCheck.php';
 
 use PulseCheck\Checks\PhpVersionCheck,
     PulseCheck\Checks\CoreVersionCheck;
@@ -29,6 +30,11 @@ class PulseCheckPlugin
             'test'  => [self::class, 'runWpCoreVersionCheck'],
         ];
 
+        $tests['direct']['pulsecheck_cron_health'] = [
+            'label' => 'Cron Health / Missed Schedules',
+            'test'  => [ self::class, 'runCronHealthCheck' ],
+        ];
+        
         return $tests;
     }
 
@@ -47,4 +53,12 @@ class PulseCheckPlugin
 
         return $result->toSiteHealthFormat();
     }
+
+    public static function runCronHealthCheck(): array
+    {
+        $check  = new \PulseCheck\Checks\CronHealthCheck();
+        $result = $check->run();
+        return $result->toSiteHealthFormat();
+    }
+
 }

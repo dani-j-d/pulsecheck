@@ -3,7 +3,7 @@ Contributors: dani-j-d
 Tags: site health, diagnostics, developer tools
 Requires at least: 5.8
 Tested up to: 6.5
-Stable tag: 0.2.0
+Stable tag: 0.3.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,7 @@ Designed to be safe for production and easy to extend.
 
 * PHP version compatibility and risk assessment
 * WordPress core version currency and update recommendation
+* Cron Health / Missed Schedules detection
 
 == Installation ==
 
@@ -34,9 +35,11 @@ Designed to be safe for production and easy to extend.
 
 == Changelog ==
 
+= 0.3.0 =
+* Added Cron Health / Missed Schedules diagnostic to Site Health
+
 = 0.2.0 =
 * Added WordPress core version diagnostic check
-* Improved documentation and clarity around existing checks
 
 = 0.1.0 =
 * Initial release
