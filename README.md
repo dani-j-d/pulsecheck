@@ -38,10 +38,12 @@ PulseCheck is designed for:
 
 It is not intended for non-technical site owners.
 
-## Current Checks (v0.1)
+## Current Checks (v0.2)
 
-- PHP version compatibility and risk assessment
+* PHP version compatibility and risk assessment
+* WordPress core version currency and update recommendation
+
 
 ## License
 
-GPL-2.0
+GPL-2.0-or-latest
