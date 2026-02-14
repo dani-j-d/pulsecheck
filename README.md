@@ -3,24 +3,17 @@
 PulseCheck is a lightweight WordPress plugin that provides high-signal diagnostic
 checks for developers and agencies maintaining WordPress sites.
 
-## Philosophy
-
-PulseCheck is intentionally conservative.
-
-It focuses on a small number of well-understood system conditions that reliably
-correlate with real-world maintenance, stability, and security risks.
-
-This plugin prioritizes:
-- Signal over coverage
-- Diagnostics over remediation
-- Explanation over enforcement
-
 ## What PulseCheck Does
 
 - Adds custom checks to the WordPress Site Health screen
+
+![Alt text](images/site-health-bar.png)
+
 - Evaluates environment and configuration risks
 - Provides clear, developer-readable explanations
 - Makes no changes to the site
+
+![Alt text](images/pulsecheck-recommendations.png)
 
 ## What PulseCheck Does Not Do
 
@@ -29,20 +22,45 @@ This plugin prioritizes:
 - Replace security or performance plugins
 - Provide guarantees about exploitability
 
-## Target Audience
-
-PulseCheck is designed for:
-- WordPress developers
-- Agencies
-- Technical site maintainers
-
-It is not intended for non-technical site owners.
-
-## Current Checks (v0.2)
+## Current Checks (v0.3)
 
 * PHP version compatibility and risk assessment
 * WordPress core version currency and update recommendation
+* Cron Health / Missed Schedules detection
 
+## How to use PulseCheck
+
+### Installation 
+
+For users, the easiest installation option is to upload a ZIP file via WP Admin.
+1. Download the repository as a ZIP file.
+![Alt text](images/download-zip.png)
+2. In your WordPress admin dashboard, go to:
+3. Plugins → Add New → Upload Plugin
+4. Upload the ZIP file.
+5. Click Install Now
+![Alt text](images/install-via-zip.png)
+6. Activate PulseCheck
+![Alt text](images/activate-plugin.png)
+
+## Philosophy
+
+PulseCheck is intentionally limited.
+
+The intent is to add useful information for preventative maintenance, site stability, and navigating security risks.
+
+This plugin prioritizes:
+- Signal over coverage
+- Diagnostics over remediation
+- Explanation over enforcement
+
+### Design Principles
+
+- Extends native WordPress Site Health instead of replacing it
+- Uses WordPress hooks and filters, not direct database manipulation
+- Read-only diagnostics (no mutation of site state)
+- Small, composable check classes
+- Designed for incremental extension
 
 ## License
 
