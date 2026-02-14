@@ -7,13 +7,13 @@ checks for developers and agencies maintaining WordPress sites.
 
 - Adds custom checks to the WordPress Site Health screen
 
-![Alt text](images/site-health-bar.png)
+  <img src="images/site-health-bar.png" alt="Alt text" height="300" />
 
 - Evaluates environment and configuration risks
 - Provides clear, developer-readable explanations
 - Makes no changes to the site
 
-![Alt text](images/pulsecheck-recommendations.png)
+  <img src="images/pulsecheck-recommendations.png" alt="Alt text" height="300" />
 
 ## What PulseCheck Does Not Do
 
@@ -33,15 +33,21 @@ checks for developers and agencies maintaining WordPress sites.
 ### Installation 
 
 For users, the easiest installation option is to upload a ZIP file via WP Admin.
-1. Download the repository as a ZIP file.
-![Alt text](images/download-zip.png)
-2. In your WordPress admin dashboard, go to:
-3. Plugins → Add New → Upload Plugin
-4. Upload the ZIP file.
+1. Download the repository as a ZIP file
+
+    <img src="images/download-zip.png" alt="Alt text" height="300" />
+
+2. In your WordPress admin dashboard, go to: Plugins → Add New → Upload Plugin
+
+4. Upload the ZIP file
+
 5. Click Install Now
-![Alt text](images/install-via-zip.png)
+
+    <img src="images/install-via-zip.png" alt="Alt text" height="300" />
+
 6. Activate PulseCheck
-![Alt text](images/activate-plugin.png)
+
+    <img src="images/activate-plugin.png" alt="Alt text" height="300" />
 
 ## Philosophy
 
